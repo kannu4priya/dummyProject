@@ -1,0 +1,563 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    color: #555;
+    background-color: white;
+    font-family:inherit;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+
+/*---------------------*/
+/*REUSABLE COMPONENTS*/
+/*---------------------*/
+.row{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+
+/*----HEADER-----*/
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)),url(img/home-restaurants-background.jpg.webp);
+    height: 100vh;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 200%;
+    word-spacing: 4px;
+}
+
+
+/*------BUTTONS------*/
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    transition: background-color 0.2s, boder 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #ff7703;
+    border: 1px solid #ff7703;
+    margin-right: 15px;
+}
+
+input[type=submit]{
+    background-color: #ff6e03;
+    transform: translateX(400%);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #ff6e03;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: rgb(214, 95, 8);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid rgb(214, 95, 8);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid rgb(214, 95, 8);
+    color: white;
+}
+
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/*--------NAVIGATION--------*/
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left:  40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 1px solid #ff7703;
+}
+
+
+/*------FEATURE-------*/
+.feature_head{
+    width: 80%;
+    margin: 80px auto
+        20px auto;
+}
+
+.menulist h2,
+.feature_head h2,
+.feature_head h4,
+.section-cities h2,
+.section-form h2,
+.section-steps h2{
+    text-align: center;
+}
+
+.menulist h2::after,
+.feature_head h2::after,
+.section-cities h2::after,
+.testimonials h2::after,
+.subscription h2::after,
+.section-form h2::after,
+.section-steps h2::after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    background-color: #ff7703;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.feature_head p{
+    width: 70%;
+    margin : 0 auto;
+    text-align: center;
+}
+
+.feature_head h1{
+    color: #555;
+    text-align: center;
+}
+
+
+table#feature_table{
+    width: 80%;
+    margin: 50px auto
+        70px auto;
+    text-align: left;
+}
+
+table#feature_table td{
+    padding-right: 30px;
+}
+
+table#feature_table th {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+table#feature_table td i{
+    font-size: 70px;
+    color: #ff7703;
+}
+
+/*----MEALS-----*/
+.meals-showcase{
+    width:100%;
+    list-style: none;
+}
+
+.meals-showcase li{
+    display: inline-block;
+    background-color: black;
+    float: left;
+    width: 25%;
+    
+}
+
+.meals-showcase li img{
+    margin-bottom: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 250px;
+    transform:scale(1.02);
+    transition: transform 0.3s , opacity 0.3s;
+}
+
+.meals-showcase li img:hover{
+    opacity: 1;
+    transform: scale(1.07); 
+    overflow: hidden;
+}
+
+/*table#outer{
+    width: 100%;
+    margin: 20px auto 20px auto;
+}*/
+
+table#steps{
+    width: 80%;
+    margin: 30px auto 0 auto;
+}
+
+
+.section-cities{
+    clear: both;
+    padding: 100px 0 100px 0 ;
+    
+}
+
+table#cities,
+table#comments{
+    width: 80%;
+    margin: 40px auto 40px auto;
+    text-align: justify-all;
+    column-gap: 20px;
+}
+
+table#cities td i{
+    color: #ff7703; 
+    padding: 10px 10px 10px 10px;
+
+}
+
+table#cities th,
+table#comments td{
+    margin-bottom: 20px; 
+    padding: 10px 10px 10px 10px;
+
+}
+
+table#cities th{
+    text-align: left;
+}
+
+table#cities img{
+    padding: 10px 10px 10px 10px;
+    width: 200px;
+    height: 150px;
+}
+
+table#cities td a{
+    text-decoration: none;
+}
+
+table#cities td a:link,
+table#cities td a:visited{
+    color:#ff7703;
+}
+
+table#cities td a:hover,
+table#cities td a:active{
+    color:#ce6207;
+}
+
+.testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(food_items/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding-top: 70px;
+    margin-bottom: 0;
+}
+
+.testimonials h2{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+table#comments{
+    color: white;
+    position: relative;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+}
+
+table#comments td::before{
+    content: "\201C";
+    color: white;
+    display: block;
+    font-size: 500%;
+    margin-bottom: 0;
+    
+}
+
+.profile{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    text-align: left;
+    border-radius: 50%;
+}
+
+.section-steps{
+    padding: 70px 0;
+}
+
+table#steps{
+    margin: 30px auto 0 auto;
+    width: 75%;
+}
+
+table#inner{
+    padding-left: 120px;
+    border-spacing: 50px;
+}
+
+table#inner td span{
+    display: inline-block;
+    color: #ff7703;
+    border: 3px solid #ff7703;
+    border-radius: 60%;
+    padding: 10px;
+    font-size: 150%;
+}
+
+.subscription h2{
+    text-align:center;
+    margin: 40px auto;
+}
+
+/*table#subscribe{
+    width: 60%;
+    margin: 20px auto;
+    transform: translateX(15%);
+}
+
+table#subscribe td,
+table#subscribe th{
+    text-align: left;
+}
+
+table#subscribe th{
+    font-size: 20px;
+    padding: 10px 10px;
+}*/
+
+.subscription{
+    margin-top: 0;
+    background-color: #efefef;
+    padding: 20px 0;
+}
+
+table#subscribe{
+    margin: 5% auto;
+}
+
+table#subscribe td{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.price{
+    font-size: 50px;
+    color: #ff7703;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+table.column{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: white;
+}
+
+.sign-btn:link,
+.sign-btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    background-color: #ff7703;
+    border: 1px solid #ff7703;
+    transform: translateX(-10%);
+    margin: 15px 15px;
+    transition: background-color 0.2s, boder 0.2s, color 0.2s;
+}
+
+.sign-btn:active,
+.sign-btn:hover{
+    background-color: rgb(214, 95, 8);
+}
+
+.section-form{
+    padding: 60px 0;
+}
+
+table#form{
+    margin: 30px auto;
+    border-spacing: 15px;
+    padding-bottom: 0;
+}
+
+input[type=text],
+input[type=email],
+select{
+    width: 100%;
+}
+
+*:focus{
+    outline: none;
+}
+
+footer{
+    padding: 70px 0;
+    background-color: #363b40;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+}
+
+.footer-nav{
+    float: left;
+}
+
+.footer-nav li{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.social-links li{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.footer-nav li a,
+.social-links li a{
+    text-decoration: none;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    color: #8c9195;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+    color: #865910;
+}
+
+.social-links {
+    float: right;
+}
+
+.footer-nav li:first-child{
+    margin-left: 50px;
+}
+
+.social-links li:last-child{
+    margin-right: 50px; 
+}
+
+.copyr{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    color: #8c9195;
+}
+
+.menulist h2{
+    color: #ff7703;
+    margin: 30px auto 0 auto;
+}
+
+table#menu{
+    width: 80%;
+    margin: 50px auto;
+    border-spacing: 50px;
+    border: 1px solid #ffe9b7;
+   /* background-color: #ffe9b7;*/
+    
+    
+}
+table#menu img{
+    width: 100%;
+    height: 175px;
+    margin: 0 0;
+}
+
+table#menu th td{
+    text-align: left;
+    padding: 0 30px;
+    margin-right: 40px;
+    
+}
+
+tablw#menu td{
+    border: 1px solid black;
+}
+
+table#menu th{
+    background-color: black;
+    color: #ffe9b7;
+    text-align: center;
+    padding: 6px 30px;
+    text-transform: uppercase;
+}
+
+table#menu a{
+    text-decoration: none;
+    color: #ffe9b7;
+}
+
+table#menu a:active,
+table#menu a:hover{
+    color: #ce670f;
+}
+
+.menulist h2{
+    color: #ffe9b7;
+}
+
+.nxtpg a:link,
+.nxtpg a:visited{color: #ffe9b7}
+
+.nxtpg a:hover,
+.nxtpg a:active{color: #ce670f;}

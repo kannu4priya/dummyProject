@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MEALTIME Sign-up form</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https;//https://fontawesome.com/icons?d=gallery&m=free/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .main-nav li a:link,
+        .main-nav li a:visited{color: black;}
+        
+        .main-nav li a:hover,
+        .main-nav li a:active{color: #9d9999;}
+    </style>
+</head>
+<body>
+            <nav>
+                <div class="row">
+                    <img src="resources/css/img/logo.png" alt="Mealtime logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="index.html#plans" target="_parent">Plans</a></li>
+                        <li><a href="index.html#howWorks" target="_parent">How it works</a></li>
+                        <li><a href="index.html#ourCities" target="_parent">our cities</a></li>
+                         <li><a href="basicInfo.html" target="_blank">Basic Info</a></li>
+                    </ul>
+                </div>
+            
+            </nav>
+    <section class="section-form">
+            <div class="row">
+                <br><br><br><br><h2 >WE'RE HAPPY TO INCLUDE YOU IN OUR FAMILY</h2>
+            </div>
+            <div class="row">
+                <form action="#" name="signupForm" onsubmit = "return validate()">
+                    <table id="form">
+                        <col style="width:25%">
+                        <col style="width:35%">
+                        <tr>
+                            <td><label for="name">Name</label></td>
+                            <td><input type="text" name="firstname" id="name" placeholder="Your name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" name="emailid" id="name" placeholder="Your email" required></td>
+                        </tr>
+                         <tr>
+                            <td><label for="contact">Contact No.</label></td>
+                            <td><input type="text" name="contact" id="contact" placeholder="Your contact no." required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="find-us">How did you find us?</label></td>
+                            <td>
+                                <select name="find" id="find-us">
+                                    <option value="Friends">Friends</option>
+                                    <option value="Search">Search Engine</option>
+                                    <option value="Ad">Advertisement</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="plan">Plan</label></td>
+                            <td>
+                                <select name="plan" id="plan">
+                                    <option value="Premium">Premium</option>
+                                    <option value="Pro">Pro</option>
+                                </select>
+                            </td>
+                        <tr>
+                            <td><label for="letter">Newsletter</label></td>
+                            <td><input type="checkbox" name="letter" id="letter" checked>&nbsp;Yes</td>
+                        </tr>
+                        <tr>
+                            <td><label for="line">Drop us a line</label></td>
+                            <td>
+                                <textarea style="width: 100%;" id="line" name="message" placeholder="Your message"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" id="submit" value="Send it!">
+                </form>
+            </div>    
+        </section>
+    
+        <footer>
+                <div class="row">
+                    <ul class="footer-nav">
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="https://www.apple.com/ios/app-store" target="_blank">iOS App</a></li>
+                        <li><a href="https://play.google.com/store?hl=en" target="_blank">Android App</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://aboutme.google.com/u/0/?referer=gplus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <br>
+                    <div class="copyr">
+                        Copyright &copy; 2018.&nbsp; All rights reserved.<br>
+                        <h2>Get food fast &mdash; not fast food.</h2>
+                    </div>
+                </div>
+            </footer>
+    <script src="script.js">
+        </script>
+</body>
+</html>
